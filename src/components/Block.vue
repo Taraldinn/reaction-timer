@@ -1,6 +1,6 @@
 <template>
   <div v-if="showBlock" @click="stopTimer">
-    <div class="block w-[400px] rounded-2xl text-3xl font-mono font-bold bg-blue-500 rounded-3xl text-white text-center py-24 my-10 mx-auto">
+    <div class="block w-[400px] rounded-2xl text-3xl font-mono font-bold bg-blue-500  text-white text-center py-24 my-10 mx-auto">
       Click Me
     </div>
   </div>
@@ -42,7 +42,8 @@ methods:{
     },
     stopTimer(){
       clearInterval(this.timer)
-      console.log(this.reactionTime)
+      this.$emit('end',this.reactionTime)
+      
     },
 
 }

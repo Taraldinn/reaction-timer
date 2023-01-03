@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "DankMono";
+    src: url("./assets/fonts/DankMono-Regular.ttf");
+  }
